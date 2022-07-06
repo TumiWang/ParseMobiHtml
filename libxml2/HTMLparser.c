@@ -900,6 +900,9 @@ html40ElementTable[] = {
 { "frameset",	0, 0, 0, 0, 0, 2, 0, "window subdivision" ,
 	DECL frameset_contents, "noframes" , NULL , DECL frameset_attrs, NULL
 },
+{ "guide",  0, 1, 0, 0, 0, 0, 0, "guide info",
+    DECL html_inline, NULL, DECL html_attrs, DECL align_attr, NULL
+},
 { "h1",		0, 0, 0, 0, 0, 0, 0, "heading ",
 	DECL html_inline, NULL, DECL html_attrs, DECL align_attr, NULL
 },
@@ -963,6 +966,9 @@ html40ElementTable[] = {
 { "map",	0, 0, 0, 0, 0, 0, 2, "client-side image map ",
 	DECL map_contents , NULL, DECL html_attrs , NULL, DECL name_attr
 },
+{ "mbp:pagebreak",  0, 1, 0, 0, 0, 0, 0, "pagebreak info",
+    DECL html_inline, NULL, DECL html_attrs, DECL align_attr, NULL
+},
 { "menu",	0, 0, 0, 0, 1, 1, 0, "menu list ",
 	DECL blockli_elt , NULL, NULL, DECL compact_attrs, NULL
 },
@@ -998,6 +1004,9 @@ html40ElementTable[] = {
 },
 { "q",		0, 0, 0, 0, 0, 0, 1, "short inline quotation ",
 	DECL html_inline, NULL, DECL quote_attrs, NULL, NULL
+},
+{ "reference",  0, 1, 0, 0, 0, 0, 0, "reference info",
+    DECL html_inline, NULL, DECL html_attrs, DECL align_attr, NULL
 },
 { "s",		0, 3, 0, 0, 1, 1, 1, "strike-through text style",
 	DECL html_inline, NULL, NULL, DECL html_attrs, NULL
