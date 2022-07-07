@@ -5,8 +5,10 @@ cmake_minimum_required (VERSION 3.13)
 #find_package(PkgConfig REQUIRED)
 #pkg_check_modules(XML REQUIRED LibXml2)
 
-set(SOURCE
-    main.cpp)
+file(GLOB SOURCE
+    "*.cpp"
+    "*.c"
+    )
 
 add_executable(test ${SOURCE})
 
